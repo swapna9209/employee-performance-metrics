@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input formControlName="id" type="hidden" />
+  <div>
+    <label>Name</label>
+    <input formControlName="name" />
+    <div *ngIf="hasError('name','required')">Name is required</div>
+    <div *ngIf="hasError('name','minlength')">Name must be at least 3 characters</div>
+  </div>
+
+  <div>
+    <label>Role</label>
+    <input formControlName="role" />
+    <div *ngIf="hasError('role','required')">Role is required</div>
+  </div>
+
+  <div>
+    <label>Department</label>
+    <input formControlName="department" />
+    <div *ngIf="hasError('department','required')">Department is required</div>
+  </div>
+
+  <div>
+    <label>Performance</label>
+    <input type="number" formControlName="performance" />
+    <div *ngIf="hasError('performance','min')">Must be >= 0</div>
+    <div *ngIf="hasError('performance','max')">Must be <= 100</div>
+  </div>
+
+  <button type="submit">Save</button>
+</form>
