@@ -1,8 +1,8 @@
-@import 'src/styles/variables';
+$font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
 .app {
   padding: 16px;
   font-family: $font-family;
-  background: $background-color;
+  background: #f5f7fb;
   min-height: 100vh;
 }

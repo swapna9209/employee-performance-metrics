@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
       <router-outlet></router-outlet>
     </main>
   `,
-  styles: [`
-    .app { padding: 16px; font-family: $font-family; background: #f5f7fb; min-height: 100vh; }
-  `]
-})
-export class AppComponent {}
+  styleUrls: ['./app.component.scss']  })
+export class AppComponent {
+   title = 'my-app';
+}

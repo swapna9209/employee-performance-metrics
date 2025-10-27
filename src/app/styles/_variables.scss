@@ -1,4 +1,8 @@
-$font-family: 'Roboto', sans-serif;
-$primary-color: #1976d2;
-$secondary-color: #424242;
-$background-color: #f5f7fb;
+@import 'src/styles/variables';
+
+.app {
+  padding: 16px;
+  font-family: $font-family;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
